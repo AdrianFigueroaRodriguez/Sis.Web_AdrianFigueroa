@@ -41,7 +41,36 @@ p.largee7{
 	font-size: 300%
 }
 
+.e8{
+	text-align: center;
+	color: red;
+}
 
+.e9{
+	color: red;
+	/* This is a single line comment */
+	text-align: center;
+	/* And i'm here just to bother also, by the way
+	i am suposed to be 
+	a multiple line comment, what
+	ever
+	that
+	is..
+	jaja */
+}
+
+div.e10{
+	background-color: lightblue;
+}
+
+h2.e10{
+	color: blue;
+	text-align: center;
+}
+
+p.e10{
+	text-align: left;
+}
 
 #para1e3{
 	font-family: verdana;
