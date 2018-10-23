@@ -72,6 +72,26 @@ p.e10{
 	text-align: left;
 }
 
+h1.e12{
+	background-color: dodgerblue;
+}
+
+p.e12{
+	background-color: tomato;
+}
+
+h1.e13{
+	color: tomato;
+}
+
+div.e13 p{
+	color: dodgerblue
+}
+
+div.e13 p.e13{
+	color: mediumseagreen;
+}
+
 #para1e3{
 	font-family: verdana;
 	font-size: 20px;
@@ -80,4 +100,23 @@ p.e10{
 #para1e4{
 	text-align: center;
 	color: red;
+}
+
+body{
+	background-image: url("imgdg.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+
+}
+
+h1.e14{
+	border: 2px solid tomato;
+}
+
+div.e14 p{
+	border: 2px solid dodgerblue;
+}
+div p.e14{
+	border: 2px solid violet;
 }
