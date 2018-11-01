@@ -120,3 +120,72 @@ div.e14 p{
 div p.e14{
 	border: 2px solid violet;
 }
+
+#e16{
+	height: 200px;
+	width: 50%;
+	max-width: 500px;
+	background-color: powderblue;
+	border: 25px solid green;
+	padding: 25px;
+	margin: 25;
+
+}
+#e17{
+	width: 320px;
+	padding: 10px;
+	border: 5px solid gray;
+	margin: 0;
+}
+
+.e17 #dot{
+	outline-color: red;
+	outline-style: dotted;
+
+}
+.e17 #dash {
+	outline-color: red;
+	outline-style: dashed;
+}
+.e17 #solid {
+	outline-color: red;
+	outline-style: solid;
+}
+.e17 #double {
+	outline-color: red;
+	outline-style: double;
+}
+.e17 #groove {
+	outline-color: red;
+	outline-style: groove;
+}
+.e17 #ridge {
+	outline-color: red;
+	outline-style: ridge;
+}
+.e17 #inset {
+	outline-color: red;
+	outline-style: inset;
+}
+.e17 #outset {
+	outline-color: red;
+	outline-style: outset;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
