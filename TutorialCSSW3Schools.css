@@ -379,39 +379,236 @@ p.ex12e22{
 	text-decoration: underline;
 }
 
+/* Text Transformation */
+#up {
+	text-transform: uppercase;
+}
 
+#low{
+	text-transform: lowercase;
+}
 
+#cap{
+	text-transform: capitalize;
+}
 
+/* Text Indentation */
+.e23 p{
+	text-indent: 50px;
+}
 
+/* Letter Spacing */
+.e23 h1{
+	letter-spacing: 3px;
+}
 
+.e23 h2{
+	letter-spacing: -3px;
+}
 
+/* Line Height */
+#up{
+	line-height: .8;
+}
 
+#low{
+	line-height: 1.8;
+}
 
+/* Text Direction */
+#cap{
+	direction: rtl;
+}
 
+/* Word Spacing */
+.e23 h1{
+	word-spacing: 10px;
+}
 
+.e23 h2{
+	word-spacing: -5px;
+}
 
+/* Text Shadow */
+.e23 h3{
+	text-shadow: 3px 2px red;
+}
 
+/* Font family*/
+.e24 p{
+	font-family: "Times New Roman", Times, serif;
+}
 
+/* Font style */
+.e24 h2{
+	font-style: normal;
+}
 
+.e24 h3{
+	font-style: italic;
+}
 
+.e24 h4{
+	font-style: oblique;
+}
 
+/* Font size with EM*
+.e24 h2{
+	font-size: 1em;
+}
 
+.e24 h3{
+	font-size: 2em;
+}
 
+.e24 h4{
+	font-size: 3em;
+} */
 
+/* Set Font Size With Pixels */
+.e24 h1 {
+	font-size: 40px;
+}
 
+.e24 h2 {
+	font-size: 30px;
+}
 
+.e24 p {
+	font-size: 14px;
+}
 
+/* Use a combination of Percent and EM */
 
+.e24 body {
+    font-size: 100%;
+}
 
+.e24 div h1 {
+    font-size: 2.5em;
+}
 
+.e24 div h2 {
+    font-size: 1.875em;
+}
 
+.e24 div p {
+    font-size: 0.875em;
+}
 
+/* Font Weight */
+#normalW{
+	font-weight: normal;
+}
 
+#bold{
+	font-weight: bold;
+}
 
+/* Responsive Font size */
+#hw{
+	font-size: 10vw;
+}
 
+/* Font variant */
+#norm{
+	font-variant: normal;
+}
 
+#smallcaps{
+	font-variant: small-caps;
+}
 
+/* Styling Links */
+/*.e26 a{
+	color: hotpink;
+	text-decoration: none;
+}
 
+.e26 a:link {
+	color: red;
+}
+
+.e26 a:visited {
+	color: green;
+}
+
+.e26 a:hover {
+	color: hotpink;
+}
+
+.e26 a:active {
+	color: blue;
+}*/
+
+/* Text Decoration */
+/*
+.e26 a:link {
+    text-decoration: none;
+}
+
+.e26 a:visited {
+    text-decoration: none;
+}
+
+.e26 a:hover {
+    text-decoration: underline;
+}
+
+.e26 a:active {
+    text-decoration: underline;
+}*/
+
+/* Background Color */
+/*
+.e26 a:link {
+    background-color: yellow;
+}
+
+.e26 a:visited {
+    background-color: cyan;
+}
+
+.e26 a:hover {
+    background-color: red;
+}
+
+.e26 a:active {
+    background-color: hotpink;
+}  */
+
+/* Advanced - Link Buttons */
+.e26 a:link, .e26 a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid black;
+}
+
+.e26 a:hover, .e26 a:active {
+    background-color: red;
+    text-decoration: none;
+    color: green;
+}
+/* Different List Item Marker */
+.e27 ul.a {
+    list-style-type: circle;
+}
+
+.e27 ul.b {
+    list-style-type: square;
+}
+
+.e27 ol.c {
+    list-style-type: upper-roman;
+}
+
+.e27 ol.d {
+    list-style-type: lower-alpha;
+}
 
 
 
