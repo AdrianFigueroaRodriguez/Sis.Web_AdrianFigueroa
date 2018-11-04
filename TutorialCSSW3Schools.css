@@ -172,6 +172,237 @@ div p.e14{
 	outline-style: outset;
 }
 
+div.e18 {
+	/* Long version 
+	border: 2px solid black;
+	outline: 2px solid blue;
+	margin-top: 100px;
+	margin-right: 100px;
+	margin-bottom: 150px;
+	margin-left: 80px;*/
+	/** Short version 
+	margin: 100px 30px 40px 200px; */
+	/** Auto margin 
+	width: 300px;
+	margin: auto;
+	border: 2px solid black;*/
+	/* Inherit value */
+	border: 2px solid red;
+	margin-left: 100px;
+}
+
+/* pt2 of Inherit value */
+p.e18 {
+	margin-left: inherit;
+	border: inherit;
+}
+
+div.e18 h1{
+	margin: 0 0 50px 0;
+}
+
+div.e18 h2{
+	margin: 20px 0 0 0;
+}
+
+div.e19{
+	/* Individual Padding 
+	padding-top: 50px;
+	padding-right: 30px;
+	padding-bottom: 50px;
+	padding-left: 80px;*/
+	/* Short version 
+	padding: 25px 50px 75px 100px; */
+	/* Padding and element width */
+	width: 300px;
+	padding: 25px;
+	box-sizing: border-box; 
+}
+
+div.e20{
+	/* V1 
+	height: 200px;
+	width: 50%;
+	background-color: powderblue; */
+	/* V2 */
+	height: 100px;
+	width: 500px;
+	background-color: powderblue;
+	/* Max-width 
+	max-width: 500px;
+	height: 100px;
+	background-color: powderblue; */
+}
+
+div.e21{
+	/* Box model 
+	width: 300px;
+	border: 25px solid green;
+	padding: 25px;
+	margin: 25px; */
+	/* Width and Height of an Element */
+	width: 320px;
+	padding: 10px;
+	border: 5px solid gray;
+	margin: 0;
+}
+
+div.e22{
+
+}
+
+/* Outline Style */
+p.dotted {outline-style: dotted;}
+p.dashed {outline-style: dashed;}
+p.solid {outline-style: solid;}
+p.double {outline-style: double;}
+p.groove {outline-style: groove;}
+p.ridge {outline-style: ridge;}
+p.inset {outline-style: inset;}
+p.outset {outline-style: outset;} 
+
+/* Outline Color */
+p.ex1e22{
+	border: 1px solid black;
+	outline-style: solid;
+	outline-color: red;
+}
+
+p.ex2e22{
+	border: 1px solid black;
+	outline-style: double;
+	outline-color: green;
+}
+
+p.ex3e22{
+	border: 1px solid black;
+	outline-style: outset;
+	outline-color: yellow; 
+} 
+
+/* Outline Width */
+p.ex4e22 {
+    border: 1px solid black;
+    outline-style: solid;
+    outline-color: red;
+    outline-width: thin;
+}
+
+p.ex5e22 {
+    border: 1px solid black;
+    outline-style: solid;
+    outline-color: red;
+    outline-width: medium;
+}
+
+p.ex6e22 {
+    border: 1px solid black;
+    outline-style: solid;
+    outline-color: red;
+    outline-width: thick;
+}
+
+p.ex7e22 {
+    border: 1px solid black;
+    outline-style: solid;
+    outline-color: red;
+    outline-width: 4px;
+}
+
+/* Shorthand property */
+p.ex8e22 {
+	outline: dashed;
+}
+p.ex9e22 {
+	outline: dotted red;
+}
+p.ex10e22 {
+	outline: 5px solid yellow;
+}
+p.ex11e22 {
+	outline: thick ridge pink;
+}
+
+/* Outline offset */
+p.ex12e22{
+	margin: 30px;
+	background-color: yellow;
+    border: 1px solid black;
+    outline: 1px solid red;
+    outline-offset: 15px;
+    width: 380px;
+}
+
+/* Text color */
+.e23 div {
+	color: blue;
+}
+
+.e23 h1{
+	color: green;
+}
+
+/* Text Alignment */
+.e23 h1{
+	text-align: center;
+}
+
+.e23 h2{
+	text-align: left;
+}
+
+.e23 h3{
+	text-align: right;
+}
+
+.e23 div{
+	text-align: justify;
+}
+
+/* Text decoration */
+.e23 a{
+	text-decoration: none;
+}
+
+.e23 h1{
+	text-align: center;
+	text-decoration: overline;
+}
+
+.e23 h2{
+	text-align: left;
+	text-decoration: line-through;
+}
+
+.e23 h3{
+	text-align: right;
+	text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
