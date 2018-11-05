@@ -354,70 +354,145 @@
 
 	</div>
 
-	<div style="overflow-x:auto;">
-  <table>
-    <tr>
-      <th>First Name</th>
-      <th>Last Name</th>
-      <th>Points</th>
-      <th>Points</th>
-      <th>Points</th>
-      <th>Points</th>
-      <th>Points</th>
-      <th>Points</th>
-      <th>Points</th>
-      <th>Points</th>
-      <th>Points</th>
-      <th>Points</th>
-    </tr>
-    <tr>
-      <td>Jill</td>
-      <td>Smith</td>
-      <td>50</td>
-      <td>50</td>
-      <td>50</td>
-      <td>50</td>
-      <td>50</td>
-      <td>50</td>
-      <td>50</td>
-      <td>50</td>
-      <td>50</td>
-      <td>50</td>
-    </tr>
-    <tr>
-      <td>Eve</td>
-      <td>Jackson</td>
-      <td>94</td>
-      <td>94</td>
-      <td>94</td>
-      <td>94</td>
-      <td>94</td>
-      <td>94</td>
-      <td>94</td>
-      <td>94</td>
-      <td>94</td>
-      <td>94</td>
-    </tr>
-    <tr>
-      <td>Adam</td>
-      <td>Johnson</td>
-      <td>67</td>
-      <td>67</td>
-      <td>67</td>
-      <td>67</td>
-      <td>67</td>
-      <td>67</td>
-      <td>67</td>
-      <td>67</td>
-      <td>67</td>
-      <td>67</td>
-    </tr>
-  </table>
-</div>
+			<div style="overflow-x:auto;">
+		  <table>
+		    <tr>
+		      <th>First Name</th>
+		      <th>Last Name</th>
+		      <th>Points</th>
+		      <th>Points</th>
+		      <th>Points</th>
+		      <th>Points</th>
+		      <th>Points</th>
+		      <th>Points</th>
+		      <th>Points</th>
+		      <th>Points</th>
+		      <th>Points</th>
+		      <th>Points</th>
+		    </tr>
+		    <tr>
+		      <td>Jill</td>
+		      <td>Smith</td>
+		      <td>50</td>
+		      <td>50</td>
+		      <td>50</td>
+		      <td>50</td>
+		      <td>50</td>
+		      <td>50</td>
+		      <td>50</td>
+		      <td>50</td>
+		      <td>50</td>
+		      <td>50</td>
+		    </tr>
+		    <tr>
+		      <td>Eve</td>
+		      <td>Jackson</td>
+		      <td>94</td>
+		      <td>94</td>
+		      <td>94</td>
+		      <td>94</td>
+		      <td>94</td>
+		      <td>94</td>
+		      <td>94</td>
+		      <td>94</td>
+		      <td>94</td>
+		      <td>94</td>
+		    </tr>
+		    <tr>
+		      <td>Adam</td>
+		      <td>Johnson</td>
+		      <td>67</td>
+		      <td>67</td>
+		      <td>67</td>
+		      <td>67</td>
+		      <td>67</td>
+		      <td>67</td>
+		      <td>67</td>
+		      <td>67</td>
+		      <td>67</td>
+		      <td>67</td>
+		    </tr>
+		  </table>
+	</div>
+	<div class="e29">
+		<h1> Ejemplo 29: Layout - The display property </h1>
+		<h2> Estoy invisible </h2>
+		<h3> tambien estoy invisible ? </h3>
+		<ul>
+		  <li><a href="/html/default.asp" target="_blank">HTML</a></li>
+		  <li><a href="/css/default.asp" target="_blank">CSS</a></li>
+		  <li><a href="/js/default.asp" target="_blank">JavaScript</a></li>
+		</ul>
 
+		<span>A display property with a value of "block" results in</span> <span>a line break between the two elements.</span>
+	</div>
 
+	<div class="e30">
+		<h1> Ejemplo 30: Layout - width and max width </h1>
 
+		<div class="ex1">This div element has width: 500px;</div>
+		<br>
 
+		<div class="ex2">This div element has max-width: 500px;</div>
+		<p><strong>Tip:</strong> Drag the browser window to smaller than 500px wide, to see the difference between 
+		the two divs!</p>
+	</div>
+
+	<div class="e31">
+		<h1> Ejemplo 31: Layout - The position property
+		</h1>
+		<h2>position: static;</h2>
+
+		<p>An element with position: static; is not positioned in any special way; it is 
+		always positioned according to the normal flow of the page:</p>
+
+		<div class="static">
+		This div element has position: static;
+		</div>
+
+		<h2>position: relative;</h2>
+
+		<p>An element with position: relative; is positioned relative to its normal position:</p>
+
+		<div class="relative">
+		This div element has position: relative;
+		</div>
+
+		<h2>position: fixed;</h2>
+
+		<p>An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled:</p>
+
+		<div class="fixed">
+		This div element has position: fixed;
+		</div>
+
+		<h2>position: absolute;</h2>
+
+		<p>An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed):</p>
+
+		<div class="relative">This div element has position: relative;
+		  <div class="absolute">This div element has position: absolute;</div>
+		</div>
+
+		<h2> position: Sticky </h2>
+		<p>Try to <b>scroll</b> inside this frame to understand how sticky positioning works.</p>
+		<p>Note: IE/Edge 15 and earlier versions do not support sticky position.</p>
+
+		<div class="sticky">I am sticky!</div>
+
+		<div style="padding-bottom:2000px">
+		  <p>In this example, the sticky element sticks to the top of the page (top: 0), when you reach its scroll position.</p>
+		  <p>Scroll back up to remove the stickyness.</p>
+		  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+		  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+		</div>
+
+		<h1>This is a heading</h1>
+		<div>
+			<img src="Shapes_logo.png" width="100" height="140">
+			<p>Because the image has a z-index of -1, it will be placed behind the text.</p>
+		</div>
+	</div>
 
 
 
