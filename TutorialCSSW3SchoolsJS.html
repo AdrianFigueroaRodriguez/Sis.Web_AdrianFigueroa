@@ -2,7 +2,6 @@
 <html>
 <head>
 	<title>Tutoriales JavaScript</title>
-	<link rel="stylesheet" href="TutorialCSSW3Schools.js">
 </head>
 <body>
 <div class="e1">
@@ -108,10 +107,413 @@
 </div>
 
 <div class="e9">
-	<h1> JS </h1>
+	<h1> JS in <'body'> </h1>
 	
+	<h1>A Web Page</h1>
+	<p id="e9">A Paragraph</p>
+	<button type="button" onclick="myFunction3()">Try it</button>
+
+	<script>
+		function myFunction3() {
+		   document.getElementById("e9").innerHTML = "Paragraph changed.";
+		}
+	</script>
+</div>
+
+<div class="e10">
+	<h1> External JS </h1>
+	
+	<h2>External JavaScript</h2>
+
+	<p id="e10">A Paragraph.</p>
+
+	<button type="button" onclick="myFunction2()">Try it</button>
+
+	<p>(myFunction is stored in an external file called "myScript.js")</p>
+	<!-- Insert .js directly in .html independent .js for each function -->
+	<script src="TutorialCSSW3Schools.js"> </script>
 
 </div>
+
+<div class="e11">
+	<h1> Extral JS Advantages </h1>
+	
+	<h2>External JavaScript</h2>
+
+	<p id="demo">A Paragraph.</p>
+
+	<button type="button" onclick="myFunction()">Try it</button>
+
+	<p>(myFunction is stored in an external file called "myScript.js")</p>
+	<!-- Located on a different page -->
+	<script src="https://www.w3schools.com/js/myScript.js"></script>
+	<!-- Located in a different folder 
+ 		<script src="/js/myScript1.js"></script> 
+ 	-->
+	<!-- Located in the same folder 
+		<script src="myScript1.js"></script> 
+	-->
+</div>
+
+<div class="e12">
+	<h1> Using innerHTML </h1>
+	
+	<h1>My First Web Page</h1>
+	<p>My First Paragraph</p>
+
+	<p id="e12"></p>
+
+	<script>
+		document.getElementById("e12").innerHTML = 5 + 6;
+	</script>
+
+</div>
+
+<div class="e13">
+	<h1> Using innerHTML </h1>
+	
+	
+	<h1>My First Web Page</h1>
+	<p>My first paragraph.</p>
+
+	<script>
+		document.write(5 + 6); /* This is a 2 edge sword */
+	</script>
+
+</div>
+
+<div class="e14">
+	<h1> Using innerHTML </h1>
+	
+	
+	<h1>My First Web Page</h1>
+	<p>My first paragraph.</p>
+
+	<script>
+		document.write(5 + 6); /* This is a 2 edge sword */
+	</script>
+
+	<p> Mira lo que pasa si presionas el botton </p>
+	<button type="button" onclick="document.write(5 + 6)" style="color: red;">Try it</button>
+</div>
+
+<div class="e15">
+	<h1> Using window.alert() </h1>
+	
+	<h1>My First Web Page</h1>
+	<p>My first paragraph.</p>
+
+	<script>
+		/* window.alert(5 + 6); */
+	</script>
+
+</div>
+
+<div class="e16">
+	<h1> Using console.log() </h1>
+	
+	<h1>My First Web Page</h1>
+	<p>My first paragraph.</p>
+
+	<script>
+		/* console.log(5 + 6); */
+	</script>
+
+</div>
+
+
+<div class="e17">
+	<h2>JavaScript Statements</h2>
+
+	<p>A <b>JavaScript program</b> is a list of <b>statements</b> to be executed by a computer.</p>
+
+	<p id="e17"></p>
+
+	<script>
+
+	var x, y, z;  // Statement 1
+	x = 5;        // Statement 2
+	y = 6;        // Statement 3
+	z = x + y;    // Statement 4
+
+	/* Tambien se puede hacer asi: 
+		x = 5; y = 6; z = x + y;
+	*/
+	document.getElementById("e17").innerHTML = "The value of z is " + z + ".";  
+
+	</script>
+
+	<p>In HTML, JavaScript statements are executed by the browser.</p>
+
+	<p id="e17b"></p>
+
+	<script>
+		document.getElementById("e17b").innerHTML = "Hello Dolly.";
+	</script>
+
+</div>
+
+<div class="e18">
+	<h1> JS White Space </h1>
+
+	<script>
+		var person = "Hege";
+		var person2="Hege";
+
+		/* Es bueno usar () para una expresion */
+		var x = y + z; 
+	</script>
+</div>
+
+<div class="e19">
+	<p>
+		The best place to break a code line is after an operator or a comma.
+	</p>
+
+	<p id="demo"></p>
+
+	<script>
+		document.getElementById("demo").innerHTML =
+		"Hello Dolly!";
+	</script>
+</div>
+
+<div class="e20">
+	<p>JavaScript code blocks are written between { and } </p>
+
+	<button type="button" onclick="myFunction()">Click Me!</button>
+
+	<p id="demo1"></p>
+	<p id="demo2"></p>
+
+	<script>
+		function myFunction() {
+		    document.getElementById("demo1").innerHTML = "Hello Dolly!";
+		    document.getElementById("demo2").innerHTML = "How are you?";
+		}
+	</script>
+</div>
+
+<div class="e21">
+	<h2>JavaScript Values</h2>
+
+	<p>Number can be written with or without decimals.</p>
+
+	<p id="e21"></p>
+
+	<script>
+		document.getElementById("e21").innerHTML = 10.50;
+	</script>
+
+	<p>Strings can be written with double or single quotes.</p>
+
+	<p id="e21b"></p>
+
+	<script>
+		document.getElementById("e21b").innerHTML = 'John Doe';
+	</script>
+</div>
+
+<div class="e22">
+	<p>In this example, x is defined as a variable.
+	Then, x is assigned the value of 6:</p>
+
+	<p id="e22"></p>
+
+	<script>
+		var x;
+		x = 6;
+		document.getElementById("e22").innerHTML = (x);
+	</script>
+
+
+	<p>JavaScript uses arithmetic operators to compute values (just like algebra).</p>
+
+	<p id="e22b"></p>
+
+	<script>
+		document.getElementById("e22b").innerHTML = ((5 + 6) * 10);
+	</script>
+
+
+	<p>Expressions compute to values.</p>
+
+	<p id="e22c"></p>
+
+	<script>
+		document.getElementById("e22c").innerHTML = "John" + " "  + "Doe";
+	</script>
+</div>
+
+<div class="e23">
+	<h1 id="myH"></h1>
+	<p id="myP"></p>
+
+	<script>
+		// Change heading:
+		document.getElementById("myH").innerHTML = "JavaScript Comments";
+		// Change paragraph:
+		document.getElementById("myP").innerHTML = "My first paragraph.";
+	</script>
+
+	<p id="e23b"></p>
+
+	<script>
+		var x = 5;      // Declare x, give it the value of 5
+		var y = x + 2;  // Declare y, give it the value of x + 2 
+
+		// Write y to demo:
+		document.getElementById("e23b").innerHTML = y;
+	</script>
+	
+
+	<h1 id="myH2"></h1>
+	<p id="myP2"></p>
+
+	<script>
+		/*
+		The code below will change
+		the heading with id = "myH"
+		and the paragraph with id = "myp"
+		*/
+		document.getElementById("myH2").innerHTML = "JavaScript Comments";
+		document.getElementById("myP2").innerHTML = "My first paragraph.";
+	</script>
+
+	<h1 id="myH3"></h1>
+	<p id="myP3"></p>
+
+	<script>
+		//document.getElementById("myH").innerHTML = "My First Page";
+		document.getElementById("myP3").innerHTML = "My first paragraph.";
+
+		/*
+			document.getElementById("myH").innerHTML = "Welcome to my Homepage";
+			document.getElementById("myP").innerHTML = "This is my first paragraph.";
+			document.getElementById("myP3").innerHTML = "The comment-block is not executed.";
+		*/
+	</script>
+
+	<p>The line starting with // is not executed.</p>
+</div>
+
+<div class="e24">
+	<h1> JS Arithmic </h1>
+	
+	<p id="e24"></p>
+
+	<script>
+		var a = 3;
+		var x = (100 + 50) * a;
+
+		document.getElementById("e24").innerHTML = x;
+	</script>
+</div>
+
+<div class="e25">
+	<h1> 
+		Add, Subtract, Multiplying, Dividing, Remainder, Incrementing, Decrementing and Operator Precedence
+	</h1>
+
+	<p id="e25"> </p>
+	<p id="e25b"> </p>
+	<p id="e25c"> </p>
+	<p id="e25d"> </p>
+	<p id="e25e"> </p>
+	<p id="e25f"> </p>
+	<p id="e25g"> </p>
+	<p id="e25h"> </p>
+
+	<script>
+		var x = 1, y = 44, z = x + y;
+		document.getElementById("e25").innerHTML = "Add = " + z;
+
+		var a = 12;
+		z -= a;
+		document.getElementById("e25b").innerHTML = "Subtract = " + z;
+
+		var b = 4;
+		z *= b;
+		document.getElementById("e25c").innerHTML = "Multiplying = " + z;
+
+		var c = 6;
+		z /= c;
+		document.getElementById("e25d").innerHTML = "Dividing = " + z;
+
+		var d = 3;
+		z %= d;
+		document.getElementById("e25e").innerHTML = "Remainder = " + z;
+
+		z++;
+		document.getElementById("e25f").innerHTML = "Incrementing = " + z;
+
+		z--;
+		document.getElementById("e25g").innerHTML = "Decrementing = " + z;
+
+		z = 15 + 12 * 2 / 5 % 4;
+		document.getElementById("e25h").innerHTML = "Operator Precedence = " + z;
+	</script>
+</div>
+
+<div class="e26">
+	<h1> JS Data Types </h1>
+	<p id="e26b"> </p>
+	<p id="e26c"> </p>
+	<p id="e26d"> </p>
+
+	<script >
+		var length = 16;
+		var lN = "Johnson";
+		var x = {firstName: "John", lastName: "Doe"};
+
+		document.getElementById("e26b").innerHTML = length;
+		document.getElementById("e26c").innerHTML = lN;
+		document.getElementById("e26d").innerHTML = x.firstName + " " + x.lastName;
+	</script>
+</div>
+
+<div clas="e27">
+	<h1> JS Arrays </h1>
+	
+	<p id="e27b"> </p>
+
+	<script>
+		var cars = ["Saab ","Volvo ","BMW "];
+		document.getElementById("e27b").innerHTML = cars[0] + cars[1] + cars[2];
+
+	</script>
+</div>
+
+<div class="e28"> 
+	<h1> JS Functions </h1>
+
+	<p class="e28b"> </p>
+
+<button onclick="myFunction()">Try it</button>
+<p id="demo2"> afsadfasdfsad </p>
+
+<script>
+function myFunction() {
+    var txt;
+    var person = prompt("Please enter your name:", " ");
+    if (person == null || person == "") {
+        txt = "User cancelled the prompt.";
+    } else {
+        txt = "Hello " + person + "! How are you today?";
+    }
+    document.getElementById("e28b").innerHTML = txt;
+} 
+</script>
+
+
+</div>
+
+
+
+
+
+
+
 
 
 
