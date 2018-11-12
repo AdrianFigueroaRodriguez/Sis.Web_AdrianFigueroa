@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Tutoriales JavaScript</title>
+	<script src=TutorialesCSSW3SchoolsJS.js"></script>
 </head>
 <body>
 <div class="e1">
@@ -487,30 +488,96 @@
 <div class="e28"> 
 	<h1> JS Functions </h1>
 
-	<p class="e28b"> </p>
+	<p id="e28b"> </p>
+	<button onclick="myFunction()">Try it</button>
 
-<button onclick="myFunction()">Try it</button>
-<p id="demo2"> afsadfasdfsad </p>
 
-<script>
-function myFunction() {
-    var txt;
-    var person = prompt("Please enter your name:", " ");
-    if (person == null || person == "") {
-        txt = "User cancelled the prompt.";
-    } else {
-        txt = "Hello " + person + "! How are you today?";
-    }
-    document.getElementById("e28b").innerHTML = txt;
-} 
-</script>
+	<script>
+	function myFunction() {
+	    var txt;
+	    var person = prompt("Please enter your name:", " ");
+
+	    if (person == null || person == "") {
+	        txt = "User cancelled the prompt.";
+	    } else {
+	        txt = "Hello " + person + "! How are you today?";
+	    }
+
+	    document.getElementById("e28b").innerHTML = txt;
+	} 
+	</script>
+	
+	<h2> Functions Return </h2>
+
+	<p id="e28c"> </p>
+	
+	<p id="e28d"> </p>
+
+	<p id="e28e"> </p>
+
+	<script>
+		var x = myfunction(4,3);
+		var txt = "";
+		var temp = 77;
+
+		function myfunction(a,b){
+			return a*b;
+		}
+
+		function toCelsius(f){
+			return (5/9) * (f-32);
+		}
+
+		function toCelsius2(f){
+			return (5/9) * (f-32);
+		}
+
+		txt = temp + "`F is: " + toCelsius2(temp) + " Celsius";
+
+		document.getElementById("e28c").innerHTML = x;
+		document.getElementById("e28d").innerHTML = toCelsius;
+		document.getElementById("e28e").innerHTML = txt;
+	</script>
+</div>
+
+<div class="e29">
+	<h1> JS Functions </h1>
+	<button onmouseover="document.getElementById('e29b').innerHTML=Date()">
+	<p id="e29b"> </p>
+	
+	<button onclick="this.innerHTML=Date()">
+</div>
+
+<div class="e30">
+	<h1> JS Strings </h1>
+
+	<p id="e30b"> </p>
+
+	<script>
+		var x = "John Doe";
+
+		var carname = "Volvo XC60";
+		var carname = 'Volvo XC60';
+
+		var txt = "A  \bB \f CD \n EF \r GHIJ \tKLM \vNOPQRSTUVWXYZ";
+		var sln = txt.length;
+
+		document.getElementById("e30b").innerHTML = txt;
+	</script>
+</div>
+
+<div class="e31">
+	<h1> JS String Methods </h1>
+
+	<p id="e31b"></p>
+	<script>
+		var str = "Please locate where 'locate' occurs!";
+		var pos = str.lastIndexOf("locate");
+		document.getElementById("e31b").innerHTML = pos;
+	</script>
 
 
 </div>
-
-
-
-
 
 
 
