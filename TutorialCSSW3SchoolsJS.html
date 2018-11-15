@@ -570,14 +570,31 @@
 	<h1> JS String Methods </h1>
 
 	<p id="e31b"></p>
+	<p id="e31c"></p>
+	<p id="e31d"></p>
+
 	<script>
 		var str = "Please locate where 'locate' occurs!";
 		var pos = str.lastIndexOf("locate");
 		document.getElementById("e31b").innerHTML = pos;
+		var str = "Apple, Banana, Kiwi";
+		var res = str.slice(7,13);
+		var res2 = str.slice (-12, -6 );
+		var res3 = str.slice(7);
+		var res4 = str.slice(-12);
+		var resSS = str.substring(7,13);
+		var resSStr = str.substr(7,6);
+		var resSStr2 = str.substr(7);
+		var resSStr3 = str.substr(-4);
+
+		var str1 = "Please visit Microsoft";
+		var n = str1.replace("Microsoft","W3Schools")
+		document.getElementById("e31c").innerHTML = res + " " + res2 + " " + res3 + " " + res4 + " " + resSS + " " +resSStr + " " + resSStr2 + " " + resSStr3;
+		document.getElementById("e31d").innerHTML = n;
 	</script>
-
-
 </div>
+
+
 
 
 
